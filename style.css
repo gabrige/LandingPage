@@ -18,11 +18,12 @@
 }
 
 html {
-    /* permite deslizar cuando hago clic en los links del menu */
+    /* hace un efecto deslizar cuando hago clic en los links del menu */
     scroll-behavior: smooth;
 }
 /* MENU */
-.contenedor-header{
+
+.menunav{
     background: #1e2326;
     position: fixed;
     width: 100%;
@@ -31,7 +32,7 @@ html {
     z-index: 99;
 }
 
-.contenedor-header header{
+.menunav header{
     max-width: 1100px;
     margin: auto;
     display: flex;
@@ -40,19 +41,19 @@ html {
     padding: 15px 20px;
 }
 
-.contenedor-header header .name a{
+.menunav header .name a{
     font-family: 'Platypi';
     font-size: 36px;
     color: #1db9e0;
     text-decoration: none;
 }
 
-.contenedor-header header ul{
+.menunav header ul{
     display: flex;
     list-style: none;
 }
 
-.contenedor-header header nav ul li a{
+.menunav header nav ul li a{
     text-align: none;
     color: #fff;
     margin: 0 15px;
@@ -61,18 +62,10 @@ html {
     text-decoration: none;
 }
 
-.contenedor-header header nav ul li a:hover{
+.menunav header nav ul li a:hover{
     color: #1db9e0;
 }
 
-.nav-responsive{
-    background-color: #1db9e0;
-    color:#fff;
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    display: none;
-}
 
 /* INICIO */
 
@@ -141,12 +134,12 @@ html {
     padding: 50px 20px;
 }
 
-.sobremi .contenido-seccion{
+.sobremi .contenido-sobremi{
     max-width: 1100px;
     margin: auto;
 }
 
-.sobremi h2{
+.sobremi .contenido-sobremi h2{
     font-size: 48px;
     font-family: 'Platypi';
     text-align: center;
@@ -154,13 +147,13 @@ html {
 
 }
 
-.sobremi .contenido-seccion p{
+.sobremi .contenido-sobremi p{
     font: 18px;
     line-height: 22px;
     margin-bottom: 20px;
 }
 
-.sobremi .contenido-seccion p span{
+.sobremi .contenido-sobremi p span{
     color: #1db9e0;
     font-weight: bold;
 }
@@ -180,11 +173,11 @@ html {
     margin-bottom: 50px;
 }
 
-.sobremi .fila .col .contenedor-intereses{
+.sobremi .fila .col .contenido-intereses{
     display: flex;
     flex-wrap: wrap;
 }
-.sobremi .fila .col .contenedor-intereses .interes{
+.sobremi .fila .col .contenido-intereses .interes{
     width: 100px;
     height: 100px;
     background-color: #252A2E;
@@ -197,11 +190,11 @@ html {
     transition: .3s;
 }
 
-.sobremi .fila .col .contenedor-intereses .interes:hover{
+.sobremi .fila .col .contenido-intereses .interes:hover{
     background-color: #1db9e0;
 }
 
-.sobremi .fila .col .contenedor-intereses .interes i{
+.sobremi .fila .col .contenido-intereses .interes i{
     font-size: 30px;
     margin-bottom: 10px;
 }
@@ -213,7 +206,7 @@ html {
     color: #fff;
     padding: 50px 20px;
 }
-.curriculum .contenido-seccion{
+.curriculum .contenido-cv{
     max-width: 1100px;
     margin: auto;
 }
@@ -333,31 +326,31 @@ html {
 
 /* PROYECTOS DESTACADOS */
 
-.portfolio{
+.proyectos{
     background-color: #252A2E;
     color: #fff;
     padding: 50px 20px;
 }
 
-.portfolio .contenido-seccion{
+.proyectos .contenido-proyectos{
     max-width: 1100px;
     margin: auto;
 }
 
-.portfolio h2{
+.proyectos h2{
     font-size: 48px;
     font-family: 'Platypi';
     text-align: center;
     padding: 20px 0;
 }
 
-.portfolio .galeria{
+.proyectos .galeria{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-.portfolio .galeria .proyecto{
+.proyectos .galeria .proyecto{
     position: relative;
     max-width: 340px;
     height: fit-content;
@@ -365,12 +358,12 @@ html {
     cursor: pointer;
 }
 
-.portfolio .galeria .proyecto img{
+.proyectos .galeria .proyecto img{
     width: 100%;
     display: block;
 }
 
-.portfolio .galeria .proyecto .overlay{
+.proyectos .galeria .proyecto .overlay{
     position: absolute;
     top: 0;
     width: 100%;
@@ -386,16 +379,16 @@ html {
     opacity: 0;
 }
 
-.portfolio .galeria .proyecto .overlay h3{
+.proyectos .galeria .proyecto .overlay h3{
     margin-bottom: 20px;
     transition: 1s;
 }
 
-.portfolio .galeria .proyecto .overlay:hover{
+.proyectos .galeria .proyecto .overlay:hover{
     opacity: 1;
 }
 
-.portfolio .galeria .proyecto .overlay:hover h3{
+.proyectos .galeria .proyecto .overlay:hover h3{
     margin-bottom: 0px;
 }
 
@@ -409,7 +402,7 @@ html {
     padding: 50px 0;
 }
 
-.contacto .contenido-seccion{
+.contacto .contenido-contacto{
     max-width: 1100px;
     margin: auto;
 }
